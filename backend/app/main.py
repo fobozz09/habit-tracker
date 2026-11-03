@@ -40,3 +40,4 @@ def add_check_in(habit_id: int, payload: CheckInCreate):
 def get_streak(habit_id: int):
     habit = _get_habit_or_404(habit_id)
     return StreakOut(habit_id=habit_id, streak=calculate_streak(habit.check_ins))
+import os
