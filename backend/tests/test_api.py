@@ -1,6 +1,8 @@
 import pytest
 from fastapi.testclient import TestClient
+
 from app import main
+
 
 @pytest.fixture(autouse=True)
 def clean_state():
